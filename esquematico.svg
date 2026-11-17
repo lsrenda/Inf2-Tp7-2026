@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 460" font-family="monospace" font-size="14">
+  <rect width="760" height="460" fill="#ffffff"/>
+  <text x="380" y="28" text-anchor="middle" font-size="18" font-weight="bold">TP7 - Esquemático: Arduino + 2 pulsadores + 2 LEDs</text>
+
+  <!-- Arduino -->
+  <rect x="300" y="60" width="160" height="320" fill="#e6f0f0" stroke="#000" stroke-width="2"/>
+  <text x="380" y="90" text-anchor="middle" font-weight="bold">Arduino</text>
+  <text x="380" y="108" text-anchor="middle">Mega 2560 / Uno</text>
+  <text x="312" y="160">D2</text>
+  <text x="312" y="220">D3</text>
+  <text x="408" y="160">D8</text>
+  <text x="408" y="220">D9</text>
+  <text x="312" y="350">GND</text>
+  <text x="380" y="372" text-anchor="middle" font-size="12">USB -> PC (Processing)</text>
+
+  <!-- Pulsador E1 -->
+  <line x1="300" y1="156" x2="200" y2="156" stroke="#000" stroke-width="2"/>
+  <line x1="200" y1="156" x2="170" y2="156" stroke="#000" stroke-width="2"/>
+  <circle cx="170" cy="156" r="4" fill="#000"/>
+  <line x1="170" y1="156" x2="150" y2="136" stroke="#000" stroke-width="2"/>
+  <circle cx="130" cy="156" r="4" fill="#000"/>
+  <line x1="130" y1="156" x2="100" y2="156" stroke="#000" stroke-width="2"/>
+  <text x="150" y="124" text-anchor="middle">E1</text>
+
+  <!-- Pulsador E2 -->
+  <line x1="300" y1="216" x2="170" y2="216" stroke="#000" stroke-width="2"/>
+  <circle cx="170" cy="216" r="4" fill="#000"/>
+  <line x1="170" y1="216" x2="150" y2="196" stroke="#000" stroke-width="2"/>
+  <circle cx="130" cy="216" r="4" fill="#000"/>
+  <line x1="130" y1="216" x2="100" y2="216" stroke="#000" stroke-width="2"/>
+  <text x="150" y="184" text-anchor="middle">E2</text>
+
+  <!-- Bus GND izquierdo -->
+  <line x1="100" y1="156" x2="100" y2="346" stroke="#000" stroke-width="2"/>
+  <line x1="100" y1="346" x2="300" y2="346" stroke="#000" stroke-width="2"/>
+  <line x1="100" y1="346" x2="100" y2="360" stroke="#000" stroke-width="2"/>
+  <line x1="84" y1="360" x2="116" y2="360" stroke="#000" stroke-width="2"/>
+  <line x1="90" y1="366" x2="110" y2="366" stroke="#000" stroke-width="2"/>
+  <line x1="96" y1="372" x2="104" y2="372" stroke="#000" stroke-width="2"/>
+  <circle cx="100" cy="216" r="3" fill="#000"/>
+  <text x="100" y="392" text-anchor="middle" font-size="12">GND</text>
+  <text x="90" y="260" text-anchor="end" font-size="12">entradas con</text>
+  <text x="90" y="276" text-anchor="end" font-size="12">INPUT_PULLUP</text>
+
+  <!-- LED L1 -->
+  <line x1="460" y1="156" x2="520" y2="156" stroke="#000" stroke-width="2"/>
+  <rect x="520" y="146" width="50" height="20" fill="#fff" stroke="#000" stroke-width="2"/>
+  <text x="545" y="140" text-anchor="middle" font-size="12">220 ohm</text>
+  <line x1="570" y1="156" x2="600" y2="156" stroke="#000" stroke-width="2"/>
+  <polygon points="600,142 600,170 624,156" fill="#ffd60a" stroke="#000" stroke-width="2"/>
+  <line x1="624" y1="142" x2="624" y2="170" stroke="#000" stroke-width="2"/>
+  <line x1="624" y1="156" x2="680" y2="156" stroke="#000" stroke-width="2"/>
+  <text x="612" y="190" text-anchor="middle">L1</text>
+
+  <!-- LED L2 -->
+  <line x1="460" y1="216" x2="520" y2="216" stroke="#000" stroke-width="2"/>
+  <rect x="520" y="206" width="50" height="20" fill="#fff" stroke="#000" stroke-width="2"/>
+  <text x="545" y="200" text-anchor="middle" font-size="12">220 ohm</text>
+  <line x1="570" y1="216" x2="600" y2="216" stroke="#000" stroke-width="2"/>
+  <polygon points="600,202 600,230 624,216" fill="#ffd60a" stroke="#000" stroke-width="2"/>
+  <line x1="624" y1="202" x2="624" y2="230" stroke="#000" stroke-width="2"/>
+  <line x1="624" y1="216" x2="680" y2="216" stroke="#000" stroke-width="2"/>
+  <text x="612" y="250" text-anchor="middle">L2</text>
+
+  <!-- Bus GND derecho -->
+  <line x1="680" y1="156" x2="680" y2="346" stroke="#000" stroke-width="2"/>
+  <line x1="460" y1="346" x2="680" y2="346" stroke="#000" stroke-width="2"/>
+  <circle cx="680" cy="216" r="3" fill="#000"/>
+  <line x1="680" y1="346" x2="680" y2="360" stroke="#000" stroke-width="2"/>
+  <line x1="664" y1="360" x2="696" y2="360" stroke="#000" stroke-width="2"/>
+  <line x1="670" y1="366" x2="690" y2="366" stroke="#000" stroke-width="2"/>
+  <line x1="676" y1="372" x2="684" y2="372" stroke="#000" stroke-width="2"/>
+  <text x="680" y="392" text-anchor="middle" font-size="12">GND</text>
+
+  <text x="380" y="430" text-anchor="middle" font-size="12">Pulsador oprimido = D2/D3 en BAJO (a GND). LED = D8/D9 -> 220 ohm -> LED -> GND.</text>
+</svg>
