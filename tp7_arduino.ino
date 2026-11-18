@@ -1,25 +1,3 @@
-/*
- * TP7 - Informática II - Entorno gráfico
- * Control de E/S de Arduino desde Processing por puerto serie (USB).
- *
- * Hardware (Arduino Mega 2560 / Uno):
- *   Pulsador E1 -> pin 2  (a GND, con INPUT_PULLUP)
- *   Pulsador E2 -> pin 3  (a GND, con INPUT_PULLUP)
- *   LED L1      -> pin 8  (con resistencia de 220 ohm a GND)
- *   LED L2      -> pin 9  (con resistencia de 220 ohm a GND)
- *
- * Protocolo (texto, 9600 baudios, una orden por línea terminada en '\n'):
- *   Arduino -> PC:
- *     "E<n>:<0|1>"  nivel de la entrada n (1 = alto, 0 = bajo)
- *     "L<n>:<0|1>"  estado del LED n (1 = encendido, 0 = apagado)
- *   PC -> Arduino:
- *     "L<n>:<0|1>"  encender/apagar el LED n
- *     "?"           pedir el estado completo (entradas y LEDs)
- *
- * Al pulsar un botón en el Arduino se alterna (toggle) el LED correspondiente
- * y se informa a la PC, de modo que la interfaz siempre refleja el estado real.
- */
-
 const uint8_t NUM = 2;
 const uint8_t PIN_IN[NUM]  = {2, 3};
 const uint8_t PIN_LED[NUM] = {8, 9};

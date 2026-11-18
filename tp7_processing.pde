@@ -1,19 +1,3 @@
-/*
- * TP7 - Informática II - Entorno gráfico
- * Interfaz en Processing para controlar las E/S de un Arduino por USB.
- *
- *  - "Entradas" (E1, E2): cuadrados verdes (alto) / rojos (bajo), según el pulsador.
- *  - "Salidas"  (L1, L2): círculos amarillos (encendido) / grises (apagado).
- *  - Click del mouse sobre un LED -> se envía la orden al Arduino.
- *  - Pulsar un botón en el Arduino -> el Arduino alterna su LED y lo informa,
- *    por lo que la interfaz lo muestra frente a la salida correspondiente.
- *
- * Protocolo (líneas de texto, 9600 baudios):
- *   Arduino -> PC: "E1:1", "L2:0", ...      PC -> Arduino: "L1:1", "?"
- *
- * Teclas: 'r' reconecta / reintenta buscar el puerto.
- */
-
 import processing.serial.*;
 
 final int NUM = 2;
